@@ -13,11 +13,15 @@ Xác thực người dùng bằng OTP khi thực hiện các thao tác quan tr�
 ---------------------------------------------------------------------------
 
 2.Thành viên tham gia dự án
-Họ tên	         Vai trò / Công việc đảm nhiệm
-Ha Trung Duc	 Thiết kế kiến trúc hệ thống, xử lý đăng nhập, phân quyền người dùng
-	         Xây dựng chức năng quản lý ví, chuyển điểm, OTP
-                 Phát triển chức năng quản trị (admin), cập nhật thông tin người dùng
-                 Tích hợp dữ liệu, xử lý file, và lưu/đọc dữ liệu từ hệ thống tệp
+Họ tên
+Ha Trung Duc	 
+K23DTCN446
+D23TXCN05-K
+Vai trò / Công việc đảm nhiệm
+Thiết kế kiến trúc hệ thống, xử lý đăng nhập, phân quyền người dùng
+Xây dựng chức năng quản lý ví, chuyển điểm, OTP
+Phát triển chức năng quản trị (admin), cập nhật thông tin người dùng
+Tích hợp dữ liệu, xử lý file, và lưu/đọc dữ liệu từ hệ thống tệp
 		 
 ----------------------------------------------------------------------------
 
