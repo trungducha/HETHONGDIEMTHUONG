@@ -40,6 +40,7 @@ Băm mật khẩu	Hàm djb2 đơn giản
 OTP	Tự sinh, giới hạn thời gian
 Không lưu pass rõ ràng	Có mã hóa
 Rollback giao dịch	Dùng try-catch trong giao dịch
+link Demo Google Driver : https://drive.google.com/file/d/1D5-_OYGjCbLrk-0LH0eCMEgjpnA5yBkF/view?usp=drive_link
 8.Sơ đồ hệ thống
              +---------------------------+
              |   GIAO DIỆN DÒNG LỆNH     |
