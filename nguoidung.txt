@@ -1,0 +1,4 @@
+tenDangNhap|matKhauBam|hoTen|email|soDienThoai|laQuanTri|matKhauTam|maVi|soDu
+a|193432024|555|111|11|0|0|a|839
+b|177622|hhhh|66|111|0|0|b|661
+c|2314137387|1|||1|1|c|0
