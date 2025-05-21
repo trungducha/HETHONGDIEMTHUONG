@@ -11,7 +11,7 @@ Giao dịch chuyển điểm giữa các ví
 
 Ghi lịch sử giao dịch
 
-Xác thực người dùng bằng OTP khi thực hiện các thao tác quan trọng
+**Xác thực người dùng bằng OTP khi thực hiện các thao tác quan trọng
 ----------------------------------------------------------------------------
 2.Thành viên tham gia dự án
 Họ tên	          Vai trò / Công việc đảm nhiệm
@@ -19,7 +19,7 @@ Ha Trung Duc	Thiết kế kiến trúc hệ thống, xử lý đăng nhập, ph�
 	            Xây dựng chức năng quản lý ví, chuyển điểm, OTP
                Phát triển chức năng quản trị (admin), cập nhật thông tin người dùng
                Tích hợp dữ liệu, xử lý file, và lưu/đọc dữ liệu từ hệ thống tệp
-----------------------------------------------------------------------------
+----------------------------------------------------------------------------**
 3.Đặc tả chức năng chính
 Tài khoản
 
