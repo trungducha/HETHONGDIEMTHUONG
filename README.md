@@ -15,8 +15,8 @@ Giao diện dòng lệnh (text-based CLI)
 Chia file rõ ràng, lưu dữ liệu bằng tập tin .txt
 
 3.4. Cấu trúc file
-File	Vai trò main.cpp	
-Điều phối luồng chương trình, gọi menu
+File	Vai trò 
+main.cpp	 Điều phối luồng chương trình, gọi menu
 nguoidung.cpp/h	Xử lý người dùng: tạo, đăng nhập, cập nhật
 vi.cpp/h	Xử lý ví điểm, chuyển điểm, log giao dịch
 otp.cpp/h	Sinh và xác thực mã OTP
