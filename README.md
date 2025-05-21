@@ -1,45 +1,96 @@
-# HETHONGDIEMTHUONG
-Hệ thống đăng nhập và đăng ký tài khoản và quản lý ví điểm thưởng
-1. Tên đồ án
-Hệ thống Đăng nhập, Đăng ký tài khoản và Quản lý ví điểm thưởng
-2. Mục tiêu dự án
-Xây dựng hệ thống dòng lệnh cho phép người dùng đăng ký, đăng nhập tài khoản, quản lý ví điểm và thực hiện giao dịch chuyển điểm. Hệ thống có phân quyền người quản lý và người dùng thường, sử dụng OTP để tăng cường bảo mật.
-3. Tổ chức hệ thống
-   
-3.1. Ngôn ngữ C++
+HỆ THỐNG QUẢN LÝ VÍ ĐIỂM THƯỞNG
+Giới thiệu dự án
+Dự án xây dựng một ứng dụng quản lý ví điểm thưởng bằng C++. Hệ thống hỗ trợ:
 
-3.2. Giao diện
-Giao diện dòng lệnh (text-based CLI - Command Line Interface ) hay Console
+Đăng ký và đăng nhập người dùng (phân quyền khách hàng và admin)
 
-3.3. Quản lý mã nguồn
-Chia file rõ ràng, lưu dữ liệu bằng tập tin .txt
+Quản lý thông tin cá nhân người dùng
 
-3.4. Cấu trúc file
-File	Vai trò 
-main.cpp	 Điều phối luồng chương trình, gọi menu
-nguoidung.cpp/h	Xử lý người dùng: tạo, đăng nhập, cập nhật
-vi.cpp/h	Xử lý ví điểm, chuyển điểm, log giao dịch
-otp.cpp/h	Sinh và xác thực mã OTP
-database.cpp/h	Giao tiếp với file nguoidung.txt (luu tru tai khoan va thong tin nguoi dung)
-4. Chức năng hệ thống
-- Đăng ký, đăng nhập, phân quyền
-- Bảo mật OTP
-- Quản lý thông tin cá nhân
-- Quản lý ví và giao dịch điểm
-5. Ví điểm thưởng
-Mỗi người dùng có 1 ví.
-Hệ thống cho phép chuyển điểm giữa các ví với kiểm tra số dư và OTP.
-Lịch sử giao dịch được lưu lại. duoi dang file text (lichsu_chuyendiem)
-6. Lưu trữ dữ liệu
-- File: nguoidung.txt
-- Ghi dữ liệu sau mỗi thao tác
-- Tải dữ liệu khi khởi động
-7. Bảo mật và an toàn dữ liệu
-Biện pháp	Cơ chế triển khai
-Băm mật khẩu	Hàm djb2 đơn giản
-OTP	Tự sinh, giới hạn thời gian
-Không lưu pass rõ ràng	Có mã hóa
-Rollback giao dịch	Dùng try-catch trong giao dịch
+Giao dịch chuyển điểm giữa các ví
+
+Ghi lịch sử giao dịch
+
+Xác thực người dùng bằng OTP khi thực hiện các thao tác quan trọng
+ Thành viên tham gia dự án
+Họ tên	          Vai trò / Công việc đảm nhiệm
+Ha Trung Duc	Thiết kế kiến trúc hệ thống, xử lý đăng nhập, phân quyền người dùng
+	            Xây dựng chức năng quản lý ví, chuyển điểm, OTP
+               Phát triển chức năng quản trị (admin), cập nhật thông tin người dùng
+               Tích hợp dữ liệu, xử lý file, và lưu/đọc dữ liệu từ hệ thống tệp
+
+
+📌 Đặc tả chức năng chính
+Tài khoản
+
+Đăng ký tài khoản (Admin / Khách hàng)
+
+Đăng nhập
+
+Khôi phục mật khẩu (admin)
+
+Đổi mật khẩu khi đăng nhập bằng mật khẩu tạm
+
+Quản lý thông tin người dùng
+
+Cập nhật thông tin cá nhân (ho tên, email, SĐT)
+
+Admin yêu cầu cập nhật thay cho người dùng, xác nhận khi đăng nhập
+
+Ví điện tử
+
+Tạo ví khi tạo tài khoản
+
+Xem số điểm
+
+Chuyển điểm giữa các ví (có xác thực OTP)
+
+Ghi lịch sử chuyển điểm
+
+OTP
+
+Sinh mã OTP ngẫu nhiên
+
+OTP có hiệu lực trong 5 phút
+
+OTP dùng khi chuyển điểm hoặc cập nhật thông tin
+
+ Cài đặt & Biên dịch chương trình
+Yêu cầu
+Trình biên dịch hỗ trợ chuẩn C++ (g++ trên Linux hoặc MinGW/Visual Studio trên Windows)
+
+Biên dịch
+bash
+Copy
+Edit
+g++ -o vi_diem main.cpp database.cpp nguoidung.cpp vi.cpp otp.cpp
+Hoặc biên dịch từng file .cpp riêng nếu cần.
+Cấu trúc tệp
+Tệp	Mô tả chức năng
+main.cpp	Hàm main, hiển thị menu chính, xử lý dòng lệnh
+database.cpp	Đọc/ghi dữ liệu người dùng và ví từ file
+nguoidung.cpp	Đăng ký, đăng nhập, cập nhật thông tin người dùng
+vi.cpp	Xử lý ví: tạo ví, chuyển điểm, hiển thị điểm, lịch sử
+otp.cpp	Sinh, gửi và xác thực mã OTP
+*.h	Khai báo struct, hàm và biến toàn cục
+nguoidung.txt	File dữ liệu chứa danh sách người dùng và ví
+lichsu_chuyendiem.txt	File lưu lịch sử giao dịch chuyển điểm
+Hướng dẫn chạy chương trình
+Chạy chương trình sau khi biên dịch:
+Thao tác người dùng:
+
+Chọn 1 để đăng ký
+
+Chọn 2 để đăng nhập
+
+Nếu đăng nhập với admin: dùng tài khoản admin / mật khẩu admin
+
+Nếu là khách hàng: cần xác thực OTP
+
+Giao diện người dùng:
+
+Có 2 menu: Admin và Khách hàng
+
+Thao tác được nhập qua bàn phím số
 link Demo Google Driver : https://drive.google.com/file/d/1D5-_OYGjCbLrk-0LH0eCMEgjpnA5yBkF/view?usp=drive_link
 8.Sơ đồ hệ thống
              +---------------------------+
