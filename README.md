@@ -5,7 +5,9 @@ Hệ thống Đăng nhập, Đăng ký tài khoản và Quản lý ví điểm t
 2. Mục tiêu dự án
 Xây dựng hệ thống dòng lệnh cho phép người dùng đăng ký, đăng nhập tài khoản, quản lý ví điểm và thực hiện giao dịch chuyển điểm. Hệ thống có phân quyền người quản lý và người dùng thường, sử dụng OTP để tăng cường bảo mật.
 3. Tổ chức hệ thống
+   
 3.1. Ngôn ngữ C++
+
 3.2. Giao diện
 Giao diện dòng lệnh (text-based CLI)
 
