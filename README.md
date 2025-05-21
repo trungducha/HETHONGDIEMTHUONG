@@ -29,7 +29,7 @@ database.cpp/h	Giao tiếp với file nguoidung.txt (luu tru tai khoan va thong 
 5. Ví điểm thưởng
 Mỗi người dùng có 1 ví.
 Hệ thống cho phép chuyển điểm giữa các ví với kiểm tra số dư và OTP.
-Lịch sử giao dịch được lưu lại.
+Lịch sử giao dịch được lưu lại. duoi dang file text (lichsu_chuyendiem)
 6. Lưu trữ dữ liệu
 - File: nguoidung.txt
 - Ghi dữ liệu sau mỗi thao tác
