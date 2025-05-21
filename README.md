@@ -1,5 +1,6 @@
-HỆ THỐNG QUẢN LÝ VÍ ĐIỂM THƯỞNG
-Giới thiệu dự án
+HỆ THỐNG QUẢN LÝ VÍ ĐIỂM THƯỞNG 
+link Demo Google Driver : https://drive.google.com/file/d/1D5-_OYGjCbLrk-0LH0eCMEgjpnA5yBkF/view?usp=drive_link
+1.Giới thiệu dự án
 Dự án xây dựng một ứng dụng quản lý ví điểm thưởng bằng C++. Hệ thống hỗ trợ:
 
 Đăng ký và đăng nhập người dùng (phân quyền khách hàng và admin)
@@ -11,15 +12,15 @@ Giao dịch chuyển điểm giữa các ví
 Ghi lịch sử giao dịch
 
 Xác thực người dùng bằng OTP khi thực hiện các thao tác quan trọng
- Thành viên tham gia dự án
+----------------------------------------------------------------------------
+2.Thành viên tham gia dự án
 Họ tên	          Vai trò / Công việc đảm nhiệm
 Ha Trung Duc	Thiết kế kiến trúc hệ thống, xử lý đăng nhập, phân quyền người dùng
 	            Xây dựng chức năng quản lý ví, chuyển điểm, OTP
                Phát triển chức năng quản trị (admin), cập nhật thông tin người dùng
                Tích hợp dữ liệu, xử lý file, và lưu/đọc dữ liệu từ hệ thống tệp
-
-
-📌 Đặc tả chức năng chính
+----------------------------------------------------------------------------
+3.Đặc tả chức năng chính
 Tài khoản
 
 Đăng ký tài khoản (Admin / Khách hàng)
@@ -53,18 +54,18 @@ Sinh mã OTP ngẫu nhiên
 OTP có hiệu lực trong 5 phút
 
 OTP dùng khi chuyển điểm hoặc cập nhật thông tin
-
- Cài đặt & Biên dịch chương trình
+----------------------------------------------------------------------------
+4.Cài đặt & Biên dịch chương trình
 Yêu cầu
 Trình biên dịch hỗ trợ chuẩn C++ (g++ trên Linux hoặc MinGW/Visual Studio trên Windows)
-
 Biên dịch
 bash
 Copy
 Edit
 g++ -o vi_diem main.cpp database.cpp nguoidung.cpp vi.cpp otp.cpp
 Hoặc biên dịch từng file .cpp riêng nếu cần.
-Cấu trúc tệp
+----------------------------------------------------------------------------
+5.Cấu trúc tệp
 Tệp	Mô tả chức năng
 main.cpp	Hàm main, hiển thị menu chính, xử lý dòng lệnh
 database.cpp	Đọc/ghi dữ liệu người dùng và ví từ file
@@ -74,25 +75,25 @@ otp.cpp	Sinh, gửi và xác thực mã OTP
 *.h	Khai báo struct, hàm và biến toàn cục
 nguoidung.txt	File dữ liệu chứa danh sách người dùng và ví
 lichsu_chuyendiem.txt	File lưu lịch sử giao dịch chuyển điểm
-Hướng dẫn chạy chương trình
-Chạy chương trình sau khi biên dịch:
-Thao tác người dùng:
+----------------------------------------------------------------------------
+6.Hướng dẫn chạy chương trình
+6.1 Thao tác người dùng:
 
-Chọn 1 để đăng ký
+Chọn 1 để đăng ký/ tạo tài khoản
 
 Chọn 2 để đăng nhập
 
 Nếu đăng nhập với admin: dùng tài khoản admin / mật khẩu admin
 
 Nếu là khách hàng: cần xác thực OTP
-
-Giao diện người dùng:
+----------------------------------------------------------------------------
+6.2 Giao diện người dùng:
 
 Có 2 menu: Admin và Khách hàng
 
 Thao tác được nhập qua bàn phím số
-link Demo Google Driver : https://drive.google.com/file/d/1D5-_OYGjCbLrk-0LH0eCMEgjpnA5yBkF/view?usp=drive_link
-8.Sơ đồ hệ thống
+
+7.Sơ đồ hệ thống
              +---------------------------+
              |   GIAO DIỆN DÒNG LỆNH     |
              |   (Console Menu UI)       |
