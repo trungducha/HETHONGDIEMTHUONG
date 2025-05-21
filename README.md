@@ -40,3 +40,48 @@ Băm mật khẩu	Hàm djb2 đơn giản
 OTP	Tự sinh, giới hạn thời gian
 Không lưu pass rõ ràng	Có mã hóa
 Rollback giao dịch	Dùng try-catch trong giao dịch
+8.Sơ đồ hệ thống
+             +---------------------------+
+             |   GIAO DIỆN DÒNG LỆNH     |
+             |   (Console Menu UI)       |
+             +---------------------------+
+                        |
+                        v
+             +---------------------------+
+             |  ĐĂNG KÝ / ĐĂNG NHẬP      |
+             | - Nhập thông tin          |
+             | - Tạo tài khoản           |
+             | - Mật khẩu tự sinh / băm |
+             +---------------------------+
+                        |
+                        v
+             +---------------------------+
+             |     PHÂN QUYỀN NGƯỜI DÙNG |
+             | - Người dùng thường       |
+             | - Quản trị viên           |
+             +---------------------------+
+               |                     |
+        (User) v                     v (Admin)
++---------------------+   +------------------------+
+| QUẢN LÝ VÍ ĐIỂM      |   |  QUẢN LÝ TÀI KHOẢN     |
+| - Xem số dư         |   | - Danh sách người dùng|
+| - Chuyển điểm       |   | - Tạo tài khoản hộ    |
+| - Lịch sử giao dịch |   | - Cập nhật thông tin  |
++---------------------+   +------------------------+
+        |                               |
+        +---------------+---------------+
+                        v
+              +----------------------+
+              |      OTP MODULE      |
+              | - Sinh mã OTP        |
+              | - Gửi và xác thực    |
+              +----------------------+
+                        |
+                        v
+              +----------------------+
+              |   LƯU TRỮ DỮ LIỆU    |
+              | - nguoidung.txt (người dùng, ví)
+                - lichSu_chuyendiem.txt|
+              | - Backup định kỳ     |
+              +----------------------+
+
