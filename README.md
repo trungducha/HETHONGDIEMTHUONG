@@ -9,7 +9,7 @@ Xây dựng hệ thống dòng lệnh cho phép người dùng đăng ký, đăn
 3.1. Ngôn ngữ C++
 
 3.2. Giao diện
-Giao diện dòng lệnh (text-based CLI)
+Giao diện dòng lệnh (text-based CLI - Command Line Interface ) hay Console
 
 3.3. Quản lý mã nguồn
 Chia file rõ ràng, lưu dữ liệu bằng tập tin .txt
